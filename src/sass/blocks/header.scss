@@ -1,0 +1,11 @@
+.header {
+  display: block;
+}
+
+.header__title {
+  @include heading--h1();
+
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+}

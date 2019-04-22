@@ -1,0 +1,19 @@
+// Mixins
+@mixin heading {
+  margin: 0;
+  font-family: $font-family--heading;
+  line-height: 1.2;
+  color: $color-text--heading;
+}
+
+@mixin heading--h1 {
+  @include heading();
+
+  font-size: 28px;
+}
+
+@mixin heading--h2 {
+  @include heading();
+
+  font-size: 24px;
+}

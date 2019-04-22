@@ -1,0 +1,7 @@
+.technologies {
+  display: block;
+}
+
+.technologies__title {
+  @include heading--h2();
+}

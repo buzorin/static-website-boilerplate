@@ -1,0 +1,21 @@
+include blocks
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    title Static Website Boilerplate
+    link(rel="stylesheet" href="css/style.css")
+
+  body
+    +header(CONTENT.header)
+
+    main
+      block main
+
+    +footer
+
+    script(src="js/script.js")

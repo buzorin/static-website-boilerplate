@@ -1,0 +1,26 @@
+// Globals
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: $mobile-width;
+
+  background-color: #ffffff;
+
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
