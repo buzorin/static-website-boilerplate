@@ -14,9 +14,10 @@ const paths = require('../paths');
 const isProduction = process.env.NODE_ENV === 'production';
 
 const buildSass = () => {
-  const blocksImports = collectBlockNames(`${paths.sass.src}blocks/`).map(
-    block => `@import 'blocks/${block}';`
-  );
+  const blocksImports = collectBlockNames(
+    `${paths.sass.src}blocks/`,
+    'scss|sass'
+  ).map(block => `@import 'blocks/${block}';`);
 
   fs.writeFileSync(
     `${paths.sass.src}blocks.scss`,

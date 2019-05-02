@@ -29,9 +29,10 @@ const getSiteContent = () =>
   });
 
 const buildPug = () => {
-  const blocksIncludes = collectBlockNames(`${paths.pug.src}blocks/`).map(
-    block => `include ../blocks/${block}`
-  );
+  const blocksIncludes = collectBlockNames(
+    `${paths.pug.src}blocks/`,
+    'pug'
+  ).map(block => `include ../blocks/${block}`);
 
   fs.writeFileSync(
     `${paths.pug.src}layouts/blocks.pug`,
